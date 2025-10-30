@@ -16,9 +16,8 @@ return new class extends Migration
         Schema::create('suratpengantars', function (Blueprint $table) {
            $table->id();
            $table->foreignId('penduduk_id');
-            $table->foreignId('user_id');
             $table->string('nomorsurat');
-              $table->string('nik')->unique();
+            $table->string('nik')->unique();
             
             $table->string('nama');
             $table->string('alamat');
@@ -31,6 +30,7 @@ return new class extends Migration
             $table->string('nomorhp');
        
             $table->timestamps();
+      
         });
     }
 

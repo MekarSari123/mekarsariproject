@@ -17,9 +17,10 @@ class SuratpengantarFactory extends Factory
     public function definition()
     {
         return [
-            'nomorsurat' =>fake()->numberBetween(10),
-            'user_id' =>fake()->numberBetween($min = 1, $max = 10),
             'penduduk_id' =>fake()->numberBetween($min = 1, $max = 10),
+            'nomorsurat' =>fake()->numberBetween(10),
+            
+           
            'nik'=>fake()->nik(),
            'nama' =>fake()->name(),
            'alamat' =>fake()->address(),
