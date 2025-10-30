@@ -15,8 +15,7 @@ return new class extends Migration
     {
         Schema::create('suratpengantars', function (Blueprint $table) {
            $table->id();
-           $table->foreignId('penduduk_id');
-            $table->foreignId('user_id');
+           $table->char('surat_nik', 16);
             $table->string('nomorsurat');
               $table->string('nik')->unique();
             
@@ -31,6 +30,7 @@ return new class extends Migration
             $table->string('nomorhp');
        
             $table->timestamps();
+            $table->foreign('surat_nik')->references('nik')->on('penduduks');
         });
     }
 
