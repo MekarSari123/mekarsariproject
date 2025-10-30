@@ -19,9 +19,11 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(5)->create();
 
-       
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
         Suratpengantar::factory(50)->create();
-        // Suratpengantar::factory(50)->create();
         penduduk::factory(50)->create();
     }
 }

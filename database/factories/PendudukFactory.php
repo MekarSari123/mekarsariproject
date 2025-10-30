@@ -3,7 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use App\Models\Penduduk;
+
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\penduduk>
  */
@@ -14,8 +14,6 @@ class PendudukFactory extends Factory
      *
      * @return array<string, mixed>
      */
-
-    protected $model = Penduduk::class;
     public function definition()
     {
         return [
